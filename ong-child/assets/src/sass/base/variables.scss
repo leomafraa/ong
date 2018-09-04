@@ -1,0 +1,126 @@
+// fonts
+// $font: 'Montserrat', sans-serif;
+// $font-icons: FontAwesome;
+$f-size-xs: 16px;
+$f-size-sm: 24px;
+$f-size-md: 30px;
+$f-size-lg: 72px;
+$f-size-xg: 100px;
+
+// colors
+$blue-violet: #6D5FB6;
+$light-gray: #E6E6E6;
+$gray: #808080;
+$dark-gray: #1E1E1E;
+$java: #16C3B0;
+$saffron: #F1C22E;
+$scooter: #2DB3D9;
+$sunset-orange: #FD4D40;
+
+$danger: $sunset-orange;
+$default: $gray;
+$info: $blue-violet;
+$primary: $scooter;
+$success: $java;
+$warning: $saffron;
+
+// animation-delay
+@mixin animation-delay($time) {
+    animation-delay: $time;
+    -o-animation-delay: $time;
+    -ms-animation-delay: $time;
+    -webkit-animation-delay: $time;
+    -moz-animation-delay: $time;
+}
+
+// animation-direction
+@mixin animation-direction($type) {
+    animation-direction: $type;
+    -o-animation-direction: $type;
+    -ms-animation-direction: $type;
+    -webkit-animation-direction: $type;
+    -moz-animation-direction: $type;
+}
+
+// animation-duration
+@mixin animation-duration($time) {
+    animation-duration: $time;
+    -o-animation-duration: $time;
+    -ms-animation-duration: $time;
+    -webkit-animation-duration: $time;
+    -moz-animation-duration: $time;
+}
+
+// animation-iteration-count
+@mixin animation-iteration-count($type) {
+    animation-iteration-count: $type;
+    -o-animation-iteration-count: $type;
+    -ms-animation-iteration-count: $type;
+    -webkit-animation-iteration-count: $type;
+    -moz-animation-iteration-count: $type;
+}
+
+// animation-name
+@mixin animation-name($name) {
+    animation-name: $name;
+    -o-animation-name: $name;
+    -ms-animation-name: $name;
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+}
+
+// border radius
+@mixin border-radius($size) {
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    border-radius: $size;
+}
+
+// box shadow
+@mixin box-shadow($style) {
+    -webkit-box-shadow: $style;
+    -moz-box-shadow: $style;
+    box-shadow: $style;
+}
+
+// placeholder
+@mixin placeholder {
+    &:-moz-placeholder {@content}
+    &::-moz-placeholder {@content}
+    &::-webkit-input-placeholder {@content}
+}
+
+// prefix
+@mixin prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+       -moz-#{$name}: #{$argument};
+        -ms-#{$name}: #{$argument};
+         -o-#{$name}: #{$argument};
+            #{$name}: #{$argument};
+}
+
+// transform
+@mixin transform($type) {
+    transform: $type;
+    -o-transform: $type;
+    -ms-transform: $type;
+    -webkit-transform: $type;
+    -moz-transform: $type;
+}
+
+// transition
+@mixin transition($property:all, $duration:500ms, $function:ease) {
+    -webkit-transition: $property $duration $function;
+    -moz-transition: $property $duration $function;
+    -ms-transition: $property $duration $function;
+    -o-transition: $property $duration $function;
+    transition: $property $duration $function;
+}
+
+// typography
+@mixin typo($size:$f-size-sm, $w:400, $family:$font, $lh:1) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $w;
+    line-height: $lh;
+}

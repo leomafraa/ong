@@ -11,7 +11,7 @@ gulp.task('default',['sass', 'js', 'watch']);
 
 // Configuration SASS
 gulp.task('sass', () => {
-    return gulp.src('assets/src/sass/**/*.scss')
+    return gulp.src('assets/src/sass/bootstrap.scss')
         .pipe(concat('style.min.css')) // Concat
         .pipe(sass({outputStyle: 'compressed'})
             .on('error', sass.logError))
