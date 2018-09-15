@@ -1,5 +1,76 @@
 .header {
-    background: $java;
-    border: 5px solid red;
-    padding: 10px;
+    background: $saffron;
+
+    .phones,
+    .social-networks {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+
+        > li {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .phones {
+        padding: 8.5px 0;
+
+        &:before,
+        li {
+            margin-right: 15px;
+        }
+
+        &:before {
+            color: #FFF;
+            content: '\e182';
+            display: inline-block;
+            font-family: $font-icons;
+            font-size: $f-size-xs;
+            vertical-align: middle;
+        }
+
+        li {
+
+            &:not(:last-of-type) {
+                position: relative;
+
+                &:after {
+                    border-radius: 5px;
+                    background: #FFF;
+                    content: '';
+                    display: inline-block;
+                    height: 5px;
+                    margin-top: -2.5px;
+                    position: absolute;
+                    right: -10px;
+                    top: 50%;
+                    width: 5px;
+                }
+            }
+        }
+
+        a {
+            color: #FFF;
+            font-size: $f-size-xs;
+        }
+    }
+
+    .social-networks {
+        text-align: right;
+
+        li {
+
+            a {
+                background: url('../img/sprites/header-and-footer.png') no-repeat;
+                display: block;
+
+                &:first-of-type {
+                    background-position: 0 0;
+                    height: 39px;
+                    width: 38px;
+                }
+            }
+        }
+    }
 }
