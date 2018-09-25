@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     babel = require('gulp-babel'),
     minCSS = require('gulp-clean-css')
-    autoPrefixer = require('gulp-autoprefixer');
+    autoPrefixer = require('gulp-autoprefixer'),
+    order = require('gulp-order');
 
 // Configuration Default
 gulp.task('default',['sass', 'js', 'watch']);
@@ -26,6 +27,12 @@ gulp.task('sass', () => {
 // Configuration Javascript
 gulp.task('js', () => {
     return gulp.src('assets/src/js/**/*.js')
+        .pipe(order([
+            'assets/src/js/jquery.min.js',
+            'assets/src/js/bootstrap3.min.js',
+            'assets/src/js/**/*.js'
+            ], {base: './'}
+        ))
         .pipe(babel({
             presets: ['env']
         }))
