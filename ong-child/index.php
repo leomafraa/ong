@@ -12,7 +12,10 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <?php get_header(); ?>
+        <?php
+            get_header();
+            locate_template('menu.php', true);
+        ?>
         <main role="main"></main>
         <?php get_footer(); ?>
     </body>

@@ -1,0 +1,129 @@
+.menu {
+    background: #FFF;
+    border-top: 0;
+
+    .navbar-toggle {
+        margin-bottom: 15.5px;
+        margin-top: 15.5px;
+    }
+
+    .navbar-brand {
+        font-size: 0;
+        height: initial;
+
+        img,
+        h1 {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h1 {
+            color: $dark-gray;
+            display: inline-block;
+            font-size: $f-size-xs;
+            font-weight: 700;
+            margin: 0;
+            max-width: 100px;
+            padding-left: 10px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+    }
+
+    .navbar-nav {
+
+        > .menu-item {
+
+            &:last-of-type {
+                box-shadow: inset -1px -4px 0 -1px $java;
+
+                > a {
+                    text-transform: uppercase;
+
+                    &:after {
+                        color: $sunset-orange;
+                        content: '\e005';
+                        font-family: $font-icons;
+                        margin-left: 10px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            &.current-menu-item,
+            &:hover {
+
+                > a,
+                > a:after {
+                    color: #FFF;
+                }
+
+                > a {
+                    background: $sunset-orange;
+                }
+            }
+
+            > a {
+                border-radius: 50px;
+                color: $dark-gray;
+                font-weight: 700;
+                margin: 11.5px 0;
+                max-height: 42px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+// mobile
+.menu {
+
+    @media (max-width: 767px) {
+
+        .navbar-toggle {
+            border-color: $sunset-orange;
+
+            &:focus,
+            &:hover {
+                background: $sunset-orange;
+
+                .icon-bar {
+                    background: #FFF;
+                }
+            }
+
+            .icon-bar {
+                background: $sunset-orange;
+            }
+        }
+
+        .navbar-nav {
+
+            > .menu-item {
+
+                &:last-of-type {
+                    box-shadow: none;
+                }
+
+                &.current-menu-item,
+                &:hover {
+
+                    > a {
+                        background: initial;
+                        color: $dark-gray;
+                    }
+
+                    > a:after {
+                        color: $sunset-orange;
+                    }
+                }
+
+                > a {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
