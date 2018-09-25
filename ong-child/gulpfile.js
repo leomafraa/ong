@@ -40,9 +40,18 @@ gulp.task('watch', () => {
     gulp.watch('assets/src/js/**/*.js', ['js']);
 });
 
-// copy bootstrap files changes
+// copy bootstrap updated files
 // needed to compile bootstrap assets ('grunt dist')
 gulp.task('bootstrap', function () {
-    return gulp.src('assets/src/sass/base/bootstrap3/**')
+    // replace css assets
+    gulp.src('assets/src/sass/base/bootstrap3/**')
         .pipe(gulp.dest('node_modules/bootstrap3/'));
+
+    // copy js
+    return gulp.src(
+        [
+            'node_modules/bootstrap3/dist/js/bootstrap3.min.js',
+            'node_modules/jquery/dist/jquery.min.js'
+        ])
+        .pipe(gulp.dest('assets/src/js/'));
 });
