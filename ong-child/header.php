@@ -1,5 +1,4 @@
 <header class="header">
-    <h1 class="hide">ONG Projeto Emanuel</h1>
     <div class="container">
         <div class="row">
             <div class="col-xs-10">
