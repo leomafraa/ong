@@ -16,7 +16,9 @@
             get_header();
             locate_template('menu.php', true);
         ?>
-        <main role="main"></main>
+        <main role="main">
+            <?php masterslider(2); ?>
+        </main>
         <?php get_footer(); ?>
     </body>
 </html>
