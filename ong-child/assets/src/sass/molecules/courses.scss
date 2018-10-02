@@ -1,0 +1,92 @@
+.courses {
+    background: $light-gray;
+    padding: 50px 0;
+    text-align: center;
+
+    h2 {
+        color: $saffron;
+        font-family: $font-2;
+        margin: 0 0 50px;
+        text-align: left;
+        text-transform: lowercase;
+    }
+
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 50px;
+
+            &:first-of-type {
+
+                i {
+                    background-position: -17px -383px;
+                    height: 161px;
+                    margin-left: -88.5px;
+                    width: 177px;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                i {
+                    background-position: -18px -552px;
+                    height: 170px;
+                    margin-left: -87.5px;
+                    width: 175px;
+                }
+            }
+
+            &:nth-of-type(3) {
+
+                i {
+                    background-position: -22px -898px;
+                    height: 178px;
+                    margin-left: -83.5px;
+                    width: 167px;
+                }
+            }
+
+            &:last-of-type {
+
+                i {
+                    background-position: -16px -728px;
+                    height: 162px;
+                    margin-left: -89px;
+                    width: 178px;
+                }
+            }
+
+            a {
+                display: block;
+                font-size: 0;
+                padding-top: 203px;
+                position: relative;
+
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            i {
+                background: url('../img/sprites/home-blocks.png') no-repeat;
+                display: inline-block;
+                left: 50%;
+                position: absolute;
+                top: 0;
+            }
+
+            h3 {
+                color: $gray;
+                font-size: $f-size-sm;
+                font-weight: 700;
+                margin: 0;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

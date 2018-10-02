@@ -1,0 +1,50 @@
+.student {
+    background: $saffron;
+
+    ul {
+        font-size: 0;
+        margin-bottom: 0;
+        padding: 25px 0;
+
+        li {
+            display: inline-block;
+            float: none;
+            list-style: none;
+            margin: 25px 0;
+            vertical-align: bottom;
+        }
+    }
+
+    h2 {
+        color: #FFF;
+        font-family: $font-2;
+        margin: 0 0 25px;
+        text-align: left;
+        text-transform: lowercase;
+        word-break: break-word;
+
+        strong {
+            color: $sunset-orange;
+            display: block;
+            font-family: $font-1;
+            font-size: $f-size-xg;
+            margin-top: -40px;
+        }
+    }
+
+    p {
+        color: #FFF;
+        font-size: $f-size-xs;
+
+        &:last-of-type {
+            margin-bottom: 25px;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto -50px;
+        max-width: 360px;
+        width: 100%;
+    }
+}

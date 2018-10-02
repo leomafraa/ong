@@ -17,7 +17,14 @@
             locate_template('menu.php', true);
         ?>
         <main role="main">
-            <?php masterslider(2); ?>
+            <?php
+                masterslider(2);
+                locate_template('views/blocks/help-and-donation.php', true);
+                locate_template('views/blocks/objective.php', true);
+                locate_template('views/blocks/courses.php', true);
+                locate_template('views/blocks/voluntary.php', true);
+                locate_template('views/blocks/student.php', true);
+            ?>
         </main>
         <?php get_footer(); ?>
     </body>

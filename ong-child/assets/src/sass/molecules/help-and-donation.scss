@@ -1,0 +1,29 @@
+.help-and-donation {
+    background: $java;
+
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            margin: 50px 0;
+        }
+    }
+
+    h2 {
+        color: $saffron;
+        font-family: $font-2;
+        margin: 0 0 50px;
+        text-transform: lowercase;
+    }
+
+    p {
+        color: #FFF;
+        margin: 0 0 5px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
