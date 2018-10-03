@@ -4,25 +4,21 @@
         <ul class="row">
             <li class="col-sm-3">
                 <a href="#" title="Administração">
-                    <i></i>
                     <h3>Administração</h3>
                 </a>
             </li>
             <li class="col-sm-3">
                 <a href="#" title="Idiomas">
-                    <i></i>
                     <h3>Idiomas</h3>
                 </a>
             </li>
             <li class="col-sm-3">
                 <a href="#" title="Tecnologia">
-                    <i></i>
                     <h3>Tecnologia</h3>
                 </a>
             </li>
             <li class="col-sm-3">
                 <a href="#" title="Artes">
-                    <i></i>
                     <h3>Artes</h3>
                 </a>
             </li>

@@ -21,7 +21,7 @@
 
             &:first-of-type {
 
-                i {
+                a:after {
                     background-position: -17px -383px;
                     height: 161px;
                     margin-left: -88.5px;
@@ -31,7 +31,7 @@
 
             &:nth-of-type(2) {
 
-                i {
+                a:after {
                     background-position: -18px -552px;
                     height: 170px;
                     margin-left: -87.5px;
@@ -41,7 +41,7 @@
 
             &:nth-of-type(3) {
 
-                i {
+                a:after {
                     background-position: -22px -898px;
                     height: 178px;
                     margin-left: -83.5px;
@@ -51,7 +51,7 @@
 
             &:last-of-type {
 
-                i {
+                a:after {
                     background-position: -16px -728px;
                     height: 162px;
                     margin-left: -89px;
@@ -69,14 +69,15 @@
                 &:hover {
                     text-decoration: none;
                 }
-            }
 
-            i {
-                background: url('../img/sprites/home-blocks.png') no-repeat;
-                display: inline-block;
-                left: 50%;
-                position: absolute;
-                top: 0;
+                &:after {
+                    background: url('../img/sprites/home-blocks.png') no-repeat;
+                    content: '';
+                    display: inline-block;
+                    left: 50%;
+                    position: absolute;
+                    top: 0;
+                }
             }
 
             h3 {
