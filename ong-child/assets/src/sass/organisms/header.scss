@@ -14,7 +14,7 @@
     }
 
     .phones {
-        padding: 8.5px 0;
+        padding: 9px 0;
 
         &:before,
         li {
@@ -62,13 +62,13 @@
         li {
 
             a {
-                background: url('../img/sprites/header-and-footer.png') no-repeat;
+                background: url('../img/sprites/default.png') no-repeat;
                 display: block;
 
                 &:first-of-type {
-                    background-position: 0 0;
-                    height: 39px;
-                    width: 38px;
+                    background-position: -32px -619px;
+                    height: 40px;
+                    width: 41px;
                 }
             }
         }

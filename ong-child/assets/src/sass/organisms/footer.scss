@@ -2,7 +2,6 @@
 
     .contact-info {
         background: $blue-violet;
-        padding: 25px 0;
 
         ul {
             margin-bottom: 0;
@@ -10,7 +9,59 @@
 
             li {
                 list-style: none;
-                margin: 25px 0;
+                padding-bottom: 75px;
+                padding-top: 75px;
+                position: relative;
+
+                &:first-of-type {
+
+                    &:after {
+                        background-position: -4px 0;
+                        height: 96px;
+                        margin-left: -52.5px;
+                        width: 105px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+
+                    &:after {
+                        background-position: -8px -101px;
+                        height: 96px;
+                        margin-left: -51px;
+                        width: 102px;
+                    }
+                }
+
+                &:nth-of-type(3) {
+
+                    &:after {
+                        background-position: -8px -302px;
+                        height: 103px;
+                        margin-left: -48.5px;
+                        width: 97px;
+                    }
+                }
+
+                &:last-of-type {
+
+                    &:after {
+                        background-position: -3px -201px;
+                        height: 98px;
+                        margin-left: -54px;
+                        width: 108px;
+                    }
+                }
+
+                &:after {
+                    background: url('../img/sprites/default.png') no-repeat;
+                    content: '';
+                    display: block;
+                    left: 50%;
+                    margin-top: -51.5px;
+                    position: absolute;
+                    top: 0;
+                }
             }
         }
 
@@ -19,6 +70,7 @@
             font-size: $f-size-xs;
             margin: 0;
             text-align: center;
+            word-break: break-word;
         }
     }
 
