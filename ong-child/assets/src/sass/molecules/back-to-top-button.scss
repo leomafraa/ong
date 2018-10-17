@@ -1,0 +1,15 @@
+.back-to-top-button {
+    background: url('../img/sprites/default.png') no-repeat 0 -417px;
+    display: block;
+    height: 190px;
+    position: fixed;
+    right: 15px;
+    transform: translateY(-190px);
+    transition: transform 2s;
+    width: 109px;
+    z-index: 120;
+
+    &.active {
+        transform: translateY(50%);
+    }
+}

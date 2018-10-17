@@ -13,6 +13,7 @@
     </head>
     <body <?php body_class(); ?>>
         <?php
+            locate_template('views/blocks/back-to-top-button.php', true);
             get_header();
             locate_template('menu.php', true);
         ?>
