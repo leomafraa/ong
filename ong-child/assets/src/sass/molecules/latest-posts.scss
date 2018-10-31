@@ -1,0 +1,111 @@
+.latest-posts {
+    background: $light-gray;
+    padding: 50px 0;
+
+    h2 {
+        color: $java;
+        font-family: $font-2;
+        margin: 0 0 25px;
+        text-align: left;
+        text-transform: lowercase;
+        word-break: break-word;
+
+        strong {
+            color: $sunset-orange;
+            display: block;
+            font-family: $font-1;
+            font-size: $f-size-xg;
+            margin-top: -40px;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 12.5px;
+        margin-top: 12.5px;
+
+        &:first-of-type {
+
+            .post-image-wrapper {
+
+                span {
+                    background-position: -5px -7px;
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+
+            .post-image-wrapper {
+
+                span {
+                    background-position: -5px -130px;
+                }
+            }
+        }
+
+        > div {
+            padding-bottom: 12.5px;
+            padding-top: 12.5px;
+        }
+
+        .post-image-wrapper {
+            position: relative;
+
+            span {
+                background: url('../img/sprites/posts.png') no-repeat;
+                color: #FFF;
+                font-size: $f-size-sm;
+                font-weight: 700;
+                height: 114px;
+                left: -15px;
+                line-height: 1;
+                padding: 33px 25px;
+                position: absolute;
+                text-align: center;
+                top: -15px;
+                width: 125px;
+            }
+
+            img {
+                border-radius: 50px;
+                display: block;
+                margin: 0 auto;
+                max-width: 700px;
+                width: 100%;
+            }
+        }
+
+        h3 {
+            color: $gray;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+
+        p {
+            margin: 0 0 15px;
+        }
+
+        a {
+            color: $dark-gray;
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+
+            &.post-link {
+                margin: 0 0 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .more-posts {
+        padding: 25px 0 50px;
+        text-align: center;
+    }
+}

@@ -25,6 +25,7 @@
                 locate_template('views/blocks/courses.php', true);
                 locate_template('views/blocks/voluntary.php', true);
                 locate_template('views/blocks/student.php', true);
+                locate_template('views/blocks/latest_posts.php', true);
             ?>
         </main>
         <?php get_footer(); ?>
