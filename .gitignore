@@ -1,3 +1,5 @@
+*.sublime-project
+*.sublime-workspace
 ong-child/assets/css
 ong-child/assets/js
 ong-child/assets/src/js/bootstrap3.min.js
